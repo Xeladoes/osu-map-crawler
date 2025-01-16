@@ -1,0 +1,23 @@
+{
+    "search": {
+        "mode": "osu",
+        "status": "ranked",
+        "min_difficulty": 4,
+        "max_difficulty": 6,
+        "sort": "difficulty_rating",
+        "query": "",
+        "limit": 5
+    },
+    "download": {
+        "directory": "downloads",
+        "filename_template": "{id}_{title}"
+    },
+    "filters": {
+        "min_length": 0,
+        "max_length": 600,
+        "min_bpm": 0,
+        "max_bpm": 999,
+        "genre": null,
+        "language": null
+    }
+} 
