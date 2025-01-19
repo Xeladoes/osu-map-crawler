@@ -1,0 +1,95 @@
+{
+    "search": {
+        // Game mode options: "osu", "taiko", "fruits", "mania", or leave empty for all modes
+        "mode": "osu",
+
+        // Status options:
+        // "any" - All categories
+        // "ranked" - Ranked maps
+        // "qualified" - Qualified maps
+        // "loved" - Loved maps
+        // "pending" - Pending/WIP maps
+        // "graveyard" - Graveyard maps
+        "status": "any",
+
+        // Difficulty range (stars)
+        "min_difficulty": 0.0,
+        "max_difficulty": 99999999999,
+
+        // Sort options:
+        // "title_desc" or "title_asc" - Sort by title
+        // "artist_desc" or "artist_asc" - Sort by artist
+        // "difficulty_desc" or "difficulty_asc" - Sort by difficulty
+        // "updated_desc" or "updated_asc" - Sort by last update
+        // "ranked_desc" or "ranked_asc" - Sort by ranked date
+        // "rating_desc" or "rating_asc" - Sort by rating
+        // "plays_desc" or "plays_asc" - Sort by play count
+        // "favourites_desc" or "favourites_asc" - Sort by favorites
+        // "relevance_desc" - Sort by relevance (default for searches)
+        "sort": "relevance_desc",
+
+        // Query examples:
+        // Simple search: "artist=\"nekomata master\""
+        // Multiple conditions:
+        // - With video: "video=1"
+        // - With storyboard: "storyboard=1"
+        // - Specific creator: "creator=peppy"
+        // - Specific BPM range: "bpm>=160 bpm<=200"
+        // - Specific length: "length>=120 length<=300"
+        // - Specific AR: "ar>=9 ar<=10"
+        // - Specific CS: "cs>=4 cs<=6"
+        // - Specific HP: "hp>=4 hp<=6"
+        // - Specific OD: "accuracy>=8 accuracy<=9"
+        // - Has specific rank: "rank=XH" (possible values: XH,X,SH,S,A,B,C,D)
+        // - Played status: "played=1" or "played=0"
+        // - Multiple terms: "artist=\"nekomata master\" ar>=9 bpm>=180"
+        "query": "artist=\"nekomata master\"",
+
+        // Maximum number of maps to download (set to a reasonable number to avoid downloading too many maps)
+        "limit": 999999
+    },
+    "download": {
+        // Directory where beatmaps will be saved
+        "directory": "downloads",
+
+        // Filename template
+        // Available variables:
+        // {id} - Beatmap set ID
+        // {title} - Song title
+        "filename_template": "{id}_{title}"
+    },
+    "filters": {
+        // Additional filters for downloaded maps
+        // Length in seconds
+        "min_length": 0,
+        "max_length": 999999999,
+
+        // BPM (beats per minute)
+        "min_bpm": 0,
+        "max_bpm": 999999999,
+
+        // Genre options (use the ID number or null for any):
+        // 0: Any           5: Pop
+        // 1: Unspecified   6: Other
+        // 2: Video Game    7: Novelty
+        // 3: Anime         8: Hip Hop
+        // 4: Rock          9: Electronic
+        //                 10: Metal
+        //                 11: Classical
+        //                 12: Folk
+        //                 13: Jazz
+        "genre": null,
+
+        // Language options (use the ID number or null for any):
+        // 0: Any           5: Italian
+        // 1: Other         6: Japanese
+        // 2: English       7: Korean
+        // 3: Chinese       8: Spanish
+        // 4: French        9: Swedish
+        //                 10: Russian
+        //                 11: Polish
+        //                 12: Instrumental
+        //                 13: Unspecified
+        "language": null
+    }
+} 
