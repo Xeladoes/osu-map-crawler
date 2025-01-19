@@ -4,11 +4,13 @@
   "description": "OSU beatmap downloader using API",
   "main": "osu_crawler.js",
   "scripts": {
-    "start": "node osu_crawler.js"
+    "start": "node osu_crawler.js",
+    "build": "pkg osu_crawler.js --targets node12-win-x64 --output dist/osu-beatmap-downloader.exe"
   },
   "dependencies": {
     "axios": "^1.6.7",
     "progress": "^2.0.3",
     "dotenv": "^16.4.1"
-  }
+  },
+  "devDependencies": {}
 }

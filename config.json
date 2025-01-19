@@ -1,12 +1,12 @@
 {
     "search": {
         "mode": "osu",
-        "status": "ranked",
-        "min_difficulty": 4,
-        "max_difficulty": 6,
-        "sort": "difficulty_rating",
-        "query": "",
-        "limit": 5
+        "status": "any",
+        "min_difficulty": 0.0,
+        "max_difficulty": 99999999999,
+        "sort": "relevance_desc",
+        "query": "artist=\"\"nekomata master\"\"",
+        "limit": 999999
     },
     "download": {
         "directory": "downloads",
@@ -14,9 +14,9 @@
     },
     "filters": {
         "min_length": 0,
-        "max_length": 600,
+        "max_length": 999999999,
         "min_bpm": 0,
-        "max_bpm": 999,
+        "max_bpm": 999999999,
         "genre": null,
         "language": null
     }

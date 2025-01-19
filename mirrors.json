@@ -1,0 +1,59 @@
+{
+    "mirrors": [
+        {
+            "name": "sayobot.cn",
+            "enabled": true,
+            "priority": 1,
+            "type": "direct",
+            "url_template": "https://txy1.sayobot.cn/beatmaps/download/full/{beatmapset_id}",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "*/*"
+            },
+            "timeout": 30000
+        },
+        {
+            "name": "chimu.moe",
+            "enabled": true,
+            "priority": 2,
+            "type": "direct",
+            "url_template": "https://chimu.moe/d/{beatmapset_id}",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "*/*"
+            },
+            "timeout": 30000
+        },
+        {
+            "name": "kitsu.moe",
+            "enabled": true,
+            "priority": 3,
+            "type": "api",
+            "url_template": "https://kitsu.moe/api/d/{beatmapset_id}",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "*/*"
+            },
+            "timeout": 30000
+        },
+        {
+            "name": "nerina.pw",
+            "enabled": true,
+            "priority": 4,
+            "type": "direct",
+            "url_template": "https://nerina.pw/d/{beatmapset_id}",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "*/*"
+            },
+            "timeout": 30000
+        }
+    ],
+    "download_options": {
+        "min_file_size": 102400,
+        "max_retries": 3,
+        "retry_delay": 1000,
+        "download_timeout": 60000,
+        "progress_update_interval": 1000
+    }
+} 
